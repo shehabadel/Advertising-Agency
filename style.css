@@ -1,0 +1,51 @@
+/* Start Utilities*/
+.root{
+    --main-color: #536DFE;
+    --text-color: #727479;
+}
+
+/*End Utilities*/
+
+/*Start Header*/
+.header-height{
+    height:120px;
+}
+.header-brand-logo{
+    max-width: 50%;
+}
+.nav-item .nav-link:hover{
+    border-bottom: 2px solid #536DFE;
+}
+.header-nav-item-font{
+    font-family: 'Teko', sans-serif;
+    font-size: 1.5rem;
+    color: var(--text-color) ;
+    padding-bottom:2px;
+    padding-top: 5px;
+    margin-left: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.header-dropdown-item-font{
+    font-family: 'Teko', sans-serif;
+    font-size: 1.3rem;
+    color: var(--text-color) ;
+    padding-bottom:5px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-right:5px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.dropdown-toggle.without-after::after{
+    display: none;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover:hover{
+    color: #536DFE;
+    background-color: transparent;
+}
+/*End Header*/
