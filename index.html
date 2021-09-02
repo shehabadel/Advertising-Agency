@@ -6,10 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/bootstrap-5.0.2-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link href="assets/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style.css">
     <title>Linoor - Digital Agency HTML Template | Home 03</title>
 </head>
 
@@ -48,12 +53,10 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link header-nav-item-font" href="#">ABOUT</a>
-                            <hr class="" style="color: black; display: block;">
                         </li>
                         <li class="nav-item">
                             <a class="nav-link header-nav-item-font" href="#">SERVICES</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link header-nav-item-font" href="#">PORTFOLIO</a>
                         </li>
@@ -70,20 +73,200 @@
                             <a class="nav-link header-nav-item-font" href="#">CONTACT</a>
                         </li>
                     </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                </div>
+                <i id="navbar-search-icon" class="fas fa-search"></i>
+                <div id="navbar-contactus" class="d-flex flex-row border-start">
+                    <div id="navbar-contactus-img" style="margin-right: 30px;">
+                        <i class="fas fa-comments fa-3x"></i>
+                    </div>
+                    <div id="navbar-contactus-details">
+                        <h6>Call Anytime</h6>
+                        <h6>+201011575136</h6>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
     <!--End Header-->
+    <!--Start Welcome Section-->
+    <section>
+        <div id="owl-carousel-section" class="container-fluid mb-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 p-0">
+                    <div class="owl-carousel">
+                        <div id="owl-carousel-items-wrapper">
+                            <div class="owl-carousel-titles">
+                                <div class="wow animate__fadeInUp" data-wow-duration="3.5s" data-wow-iteration="infinite">
+                                    <h1>Welcome to Linoor Agency</h1>
+                                </div>
+                                <div class="wow animate__fadeInUp" data-wow-duration="3s" data-wow-iteration="infinite"
+                                    data-wow-delay="1s">
+                                    <h2>Discover</h2>
+                                    <h3>New Linoor Ag<span style="color: var(--main-color);">en</span>cy</h3>
+                                </div>
+                            </div>
+                            <img src="assets/img/welcome1.jpg">
+                        </div>
+                        <div id="owl-carousel-items-wrapper">
+                            <div class="owl-carousel-titles">
+                                <div class="wow animate__fadeInUp" data-wow-duration="3.5s" data-wow-iteration="infinite">
+                                    <h1>Welcome to Linoor Agency</h1>
+                                </div>
+                                <div class="wow animate__fadeInUp" data-wow-duration="3s" data-wow-iteration="infinite"
+                                    data-wow-delay="1s">
+                                    <h2>Discover</h2>
+                                    <h3>New Linoor Ag<span style="color: var(--main-color);">en</span>cy</h3>
+                                </div>
+                            </div>
+                            <img src="assets/img/welcome2.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Welcome Section-->
+    <!--Start Second Section-->
+    <section>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="featured-images-section">
+                        <div class="featured-image-container-1"><img src="assets/img/featured-image-1.jpg"
+                                data-wow-duration="2s" class="wow animate__fadeInLeft featured-images-img animated">
+                        </div>
+                        <div class="featured-image-container-2"><img id="featured-image-2"
+                                src="assets/img/featured-image-2.jpg" data-wow-duration="4s"
+                                class="wow animate__fadeInUp featured-images-img animated"></div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <div>
+                        <h1 class="display-1 header-1 wow animate__fadeInUp" data-wow-duration="3s">We're the best agency in downtown <span
+                                style="color: var(--main-color);">.</span></h1>
+                    </div>
+                    <div>
+                        <p class="text-1">We are commited to providing our customers with exceptional service while
+                            offering our employees
+                            the best training</p>
+                    </div>
+                    <div>
+                        <p class="text-2">Lorem Ipsum is simply dummy text of free available in market the<br> printing
+                            and typesetting industry has been the industry's standard<br> dummy text ever.</p>
+                    </div>
+                    <div class="d-flex flex-row justify-content-between">
+                        <ul class="random-text-list ps-0">
+                            <li><i class="fas fa-check me-3"></i>Suspe ndisse suscipit sagittis leo.</li>
+                            <li><i class="fas fa-check me-3"></i>Entum estibulum dignissim posuere.</li>
+                            <li><i class="fas fa-check me-3"></i>If you are going to use a passage.</li>
+                        </ul>
+                        <div class="px-5 since h-25">
+                            <div class="since-rounded">
+                                <span>Since</span>
+                                <span>2008</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div id="discover-more-btn" class="my-3">
+                        <a class="btn btn-rounded">
+                            <span id="discover-more-btn-text">Discover More</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--End Second Section-->
+    <!--Start What We Offering Section-->
+    <section>
+        <div id="what-we-offering-section" class="container-fluid">
+            <div class="row">
+                <div class="col align-self-center mt-5">
+                    <h1 class="what-we-offering-header mt-5">What we are offering <span style="color: var(--main-color);">.</span></h1>
+                <div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="card what-we-offering-cards">
+                        <div class="card-img-top mt-5 mb-3">
+                            <i class="fab fa-500px fa-5x"></i>
+                        </div>
+                        <div class="card-body p-0">
+                            <a href="#"><h1 class="display-6">Modern<br> Designing</h1></a>
+                        <div class="card-text fs-5 what-we-offering-cards-text">
+                            Lorem ipsum is are many variations of pass of majority.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="card what-we-offering-cards">
+                        <div class="card-img-top mt-5 mb-3">
+                            <i class="fab fa-500px fa-5x"></i>
+                        </div>
+                        <div class="card-body p-0">
+                            <a href="#"><h1 class="display-6">Modern<br> Designing</h1></a>
+                        <div class="card-text fs-5 what-we-offering-cards-text">
+                            Lorem ipsum is are many variations of pass of majority.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="card what-we-offering-cards">
+                        <div class="card-img-top mt-5 mb-3">
+                            <i class="fab fa-500px fa-5x"></i>
+                        </div>
+                        <div class="card-body p-0">
+                            <a href="#"><h1 class="display-6">Modern<br> Designing</h1></a>
+                        <div class="card-text fs-5 what-we-offering-cards-text">
+                            Lorem ipsum is are many variations of pass of majority.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                    <div class="card what-we-offering-cards">
+                        <div class="card-img-top mt-5 mb-3">
+                            <i class="fab fa-500px fa-5x"></i>
+                        </div>
+                        <div class="card-body p-0">
+                            <a href="#"><h1 class="display-6">Modern<br> Designing</h1></a>
+                        <div class="card-text fs-5 what-we-offering-cards-text">
+                            Lorem ipsum is are many variations of pass of majority.
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End What We Offering Section-->
     <!--Start Scripts-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
     <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script src="assets/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="assets/js/wow.min.js"></script>
     <script src="script.js"></script>
+    <script>
+        var owl = $('.owl-carousel');
+        //7ot el div beta3 el text gowa hena we 23melo animateOut we animateIn
+        owl.owlCarousel({
+            animateOut: 'animate__fadeOut animate__zoomOut ',
+            animateIn: 'animate__fadeIn animate__zoomIn animate__slow',
+            items: 1,
+            loop: true,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 6000,
+            autoplayHoverPause: true
+        });
+    </script>
+    <script>
+        new WOW().init();
+    </script>
     <!--End Scripts-->
 </body>
 
