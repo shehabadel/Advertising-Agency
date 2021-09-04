@@ -21,7 +21,7 @@
 <body>
     <!--Start Header-->
     <header class="header-height">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white h-100">
+        <nav id="navigation" class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
             <div class="container-fluid">
                 <a class="navbar-brand w-25" href="#"><img class="header-brand-logo" src="assets/img/logo-dark.png"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -32,8 +32,8 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li id="navbar-dropdown" class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active header-nav-item-font" href="#" aria-current="page"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active header-nav-item-font" href="#welcome"
+                                aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 HOME
                             </a>
                             <ul id="navbar-dropdown-ul" class="dropdown-menu pt-3 pb-3 border rounded"
@@ -52,10 +52,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-nav-item-font" href="#">ABOUT</a>
+                            <a class="nav-link header-nav-item-font" href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-nav-item-font" href="#">SERVICES</a>
+                            <a class="nav-link header-nav-item-font" href="#services">SERVICES</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link header-nav-item-font" href="#">PORTFOLIO</a>
@@ -90,7 +90,7 @@
     </header>
     <!--End Header-->
     <!--Start Welcome Section-->
-    <section>
+    <section id="welcome" class="page-section">
         <!--TODO Check zoom animation and add background layer-->
         <div id="owl-carousel-section" class="container-fluid mb-4">
             <div class="row">
@@ -98,26 +98,28 @@
                     <div class="owl-carousel">
                         <div id="owl-carousel-items-wrapper">
                             <div class="owl-carousel-titles">
-                                <div class="wow animate__fadeInUp" data-wow-duration="3.5s" data-wow-iteration="infinite">
-                                    <h1>Welcome to Linoor Agency</h1>
+                                <div class="wow animate__fadeInUp" data-wow-duration="3.5s"
+                                    data-wow-iteration="infinite">
+                                    <h1>Welcome to Linoor <span class="main-font-color">Agency</span></h1>
                                 </div>
                                 <div class="wow animate__fadeInUp" data-wow-duration="3s" data-wow-iteration="infinite"
                                     data-wow-delay="1s">
                                     <h2>Discover</h2>
-                                    <h3>New Linoor Ag<span style="color: var(--main-color);">en</span>cy</h3>
+                                    <h3>New Linoor Ag<span class="main-font-color">en</span>cy</h3>
                                 </div>
                             </div>
                             <img src="assets/img/welcome1.jpg">
                         </div>
                         <div id="owl-carousel-items-wrapper">
                             <div class="owl-carousel-titles">
-                                <div class="wow animate__fadeInUp" data-wow-duration="3.5s" data-wow-iteration="infinite">
+                                <div class="wow animate__fadeInUp" data-wow-duration="3.5s"
+                                    data-wow-iteration="infinite">
                                     <h1>Welcome to Linoor Agency</h1>
                                 </div>
                                 <div class="wow animate__fadeInUp" data-wow-duration="3s" data-wow-iteration="infinite"
                                     data-wow-delay="1s">
                                     <h2>Discover</h2>
-                                    <h3>New Linoor Ag<span style="color: var(--main-color);">en</span>cy</h3>
+                                    <h3>New Linoor Ag<span class="main-font-color">en</span>cy</h3>
                                 </div>
                             </div>
                             <img src="assets/img/welcome2.jpg">
@@ -129,7 +131,7 @@
     </section>
     <!--End Welcome Section-->
     <!--Start Second Section-->
-    <section>
+    <section id="about" class="page-section">
         <div class="container mb-5">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
@@ -144,8 +146,8 @@
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <div>
-                        <h1 class="display-1 header-1 wow animate__fadeInUp mt-3" data-wow-duration="3s">We're the best agency in downtown <span
-                                style="color: var(--main-color);">.</span></h1>
+                        <h1 class="display-1 header-1 wow animate__fadeInUp mt-3" data-wow-duration="3s">We're the best
+                            agency in downtown <span class="main-font-color">.</span></h1>
                     </div>
                     <div>
                         <p class="text-1">We are commited to providing our customers with exceptional service while
@@ -183,77 +185,339 @@
         <div id="what-we-offering-section" class="container-fluid">
             <div class="row">
                 <div class="col align-self-center mt-5">
-                    <h1 class="what-we-offering-header mt-5">What we are offering <span style="color: var(--main-color);">.</span></h1>
-                <div>
+                    <h1 class="section-header mt-5">What we are offering <span class="main-font-color">.</span>
+                    </h1>
+                    <div>
+                    </div>
+                    <div class="row justify-content-around">
+                        <!--TODO Check responsive of this section-->
+                        <div class="col-xs-12 col-xm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                            <div class="card what-we-offering-cards wow animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="100ms">
+                                <div class="card-img-top mt-5 mb-3 ms-3">
+                                    <i></i>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h1 class="display-6">Modern<br> Designing</h1>
+                                    </a>
+                                    <div class="card-text fs-5 what-we-offering-cards-text">
+                                        Lorem ipsum is are many variations of pass of majority.
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 what-we-offering-cards-footer">
+                                    <a href="#welcome" name="card-footer-btn" class="btn p-0"><i
+                                            class="fas fa-angle-right fa-3x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-xm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                            <div class="card what-we-offering-cards wow animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="300ms">
+                                <div class="card-img-top mt-5 mb-3 ms-3">
+                                    <i></i>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h1 class="display-6">Marketing<br> Strategy</h1>
+                                    </a>
+                                    <div class="card-text fs-5 what-we-offering-cards-text">
+                                        Lorem ipsum is are many variations of pass of majority.
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 what-we-offering-cards-footer">
+                                    <a href="#welcome" name="card-footer-btn" class="btn p-0"><i
+                                            class="fas fa-angle-right fa-3x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-xm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                            <div class="card what-we-offering-cards wow animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="500ms">
+                                <div class="card-img-top mt-5 mb-3 ms-3">
+                                    <i></i>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h1 class="display-6">Digital<br> Products</h1>
+                                    </a>
+                                    <div class="card-text fs-5 what-we-offering-cards-text">
+                                        Lorem ipsum is are many variations of pass of majority.
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 what-we-offering-cards-footer">
+                                    <a href="#welcome" name="card-footer-btn" class="btn p-0"><i
+                                            class="fas fa-angle-right fa-3x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-xm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                            <div class="card what-we-offering-cards wow animate__fadeInUp" data-wow-duration="1s"
+                                data-wow-delay="700ms">
+                                <div class="card-img-top mt-5 mb-3 ms-3">
+                                    <i></i>
+                                </div>
+                                <div class="card-body">
+                                    <a href="#">
+                                        <h1 class="display-6">Website<br> Development</h1>
+                                    </a>
+                                    <div class="card-text fs-5 what-we-offering-cards-text">
+                                        Lorem ipsum is are many variations of pass of majority.
+                                    </div>
+                                </div>
+                                <div class="card-footer bg-transparent border-0 what-we-offering-cards-footer">
+                                    <a href="#welcome" name="card-footer-btn" class="btn p-0"><i
+                                            class="fas fa-angle-right fa-3x"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+    <!--Experience Us Section-->
+    <!--TODO Refactor this section in responsive devices-->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col align-self-center mt-5">
+                    <h1 class="text-color-dark section-header mt-5">Experience Us <span class="main-font-color">.</span>
+                    </h1>
+                </div>
             </div>
-            <div class="row justify-content-around">
-                <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card what-we-offering-cards">
-                        <div class="card-img-top mt-5 mb-3">
-                            <i class="fab fa-500px fa-5x"></i>
+            <div class="row">
+                <div class="col align-self-end mt-3">
+                    <div class="experience-us-section position-relative">
+                        <div class="experience-us-img">
+                            <img src="assets/img/featured-image-3.jpg">
                         </div>
-                        <div class="card-body p-0">
-                            <a href="#"><h1 class="display-6">Modern<br> Designing</h1></a>
-                        <div class="card-text fs-5 what-we-offering-cards-text">
-                            Lorem ipsum is are many variations of pass of majority.
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card what-we-offering-cards">
-                        <div class="card-img-top mt-5 mb-3">
-                            <i class="fab fa-500px fa-5x"></i>
-                        </div>
-                        <div class="card-body p-0">
-                            <a href="#"><h1 class="display-6">Marketing<br> Strategy</h1></a>
-                        <div class="card-text fs-5 what-we-offering-cards-text">
-                            Lorem ipsum is are many variations of pass of majority.
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card what-we-offering-cards">
-                        <div class="card-img-top mt-5 mb-3">
-                            <i class="fab fa-500px fa-5x"></i>
-                        </div>
-                        <div class="card-body p-0">
-                            <a href="#"><h1 class="display-6">Digital<br> Products</h1></a>
-                        <div class="card-text fs-5 what-we-offering-cards-text">
-                            Lorem ipsum is are many variations of pass of majority.
-                        </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-xm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-                    <div class="card what-we-offering-cards">
-                        <div class="card-img-top mt-5 mb-3">
-                            <i class="fab fa-500px fa-5x"></i>
-                        </div>
-                        <div class="card-body p-0">
-                            <a href="#"><h1 class="display-6">Website<br> Development</h1></a>
-                        <div class="card-text fs-5 what-we-offering-cards-text">
-                            Lorem ipsum is are many variations of pass of majority.
-                        </div>
+                        <div class="experience-us-rounded-wrapper">
+                            <div class="experience-us-rounded">
+                                <div class="position-relative ">
+                                    <div id="experience-us-outer"
+                                        class="custom-rounded-shape-dark bg-transparent border border-1 border-grey position-relative p-0">
+                                        <a class="custom-rounded-shape-dark bg-transparent experience-us-button-wrapper"
+                                            href="https://www.youtube.com/watch?v=Y3LGT3Q2hjo" target="_blank">
+                                            <div class="experience-us-icon-wrapper">
+                                                <i class="fas fa-play experience-us-icon"></i>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <h1 class="experience-us-header">Agency that gets excited about</h1>
+                                    <a class="experience-us-link">
+                                        <h6>Read More</h6>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--End What We Offering Section-->
+    <section id="services" class="services-section">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <h1 class="text-color-dark section-header text-start mt-5">We do more than ever platforms<span
+                            class="main-font-color">.</span>
+                        <article class="d-flex flex-row justify-content-between mt-5">
+                            <img class="w-50 border rounded rounded-3" src="assets/img/welcome1.jpg">
+                            <p class="services-paragraph">There are many variants of passages the majority have suffered
+                                alteration in some foor randomised words believable.</p>
+                        </article>
+                        <div class="services-progress">
+                            <h6>Digitial Marketing</h6>
+                            <div class="progress w-50">
+                                <!--TODO Check what is wrong with tooltip-->
+                                <div id="progress-bar" class="progress-bar w-75" role="progressbar" aria-valuenow="75"
+                                    aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip"
+                                    data-bs-placement="top" title="75%">
+                                    <span class="popOver" data-toggle="tooltip" data-placement="top" title="75%">
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                                    aria-controls="panelsStayOpen-collapseOne">
+                                    <span class="main-font-color">1. &nbsp</span><span>WE HELP TO CREATE VISUAL
+                                        STRATEGIES</span>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <p>There are many variations of passages the majority have suffered alteration in
+                                        some fo injected humour, or randomised words believable.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseTwo">
+                                    <span class="main-font-color">2. &nbsp</span><span>MOTION GRAPHICS &
+                                        ANIMATIONS</span>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingTwo">
+                                <div class="accordion-body">
+                                    <p>There are many variations of passages the majority have suffered alteration in
+                                        some fo injected humour, or randomised words believable.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mt-2">
+                            <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                                    aria-controls="panelsStayOpen-collapseThree">
+                                    <span class="main-font-color">3. &nbsp</span><span>WE HELP TO ACHIEVE MUTUAL GOALS
+                                    </span>
+                                </button>
+                            </h2>
+                            <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingThree">
+                                <div class="accordion-body">
+                                    <p>There are many variations of passages the majority have suffered alteration in
+                                        some fo injected humour, or randomised words believable.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Experience Us Section-->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <h1 class="text-color-dark section-header text-start mt-5">Work ShowCase<span
+                            class="main-font-color">.</span>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                    <ul id="show-case-navbar" class="nav justify-content-end mt-5 controls">
+                        <li class="nav-item">
+                            <a class="nav-link control" data-filter="all" >All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link control" data-filter=".green" >Illustration</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link control" data-filter=".blue" >Photography</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link control" data-filter=".pink" >Web Design</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="portfolio-gallery" class="row mt-3 container-gallery">
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix green">
+                        <div class="card portfolio-item">
+                            <div class="card-body p-0">
+                                <img src="assets/img/1.jpg">
+                                <div id="portfolio-item-toast" class="fade">
+                                    <div class="portfolio-item-toast-body px-3">
+                                        <h6>GRAPHIC</h6>
+                                        <h4>FIMLOR EXPERIENCE</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix green">
+                        <div class="card portfolio-item">
+                            <div class="card-body p-0">
+                                <img src="assets/img/2.jpg">
+                                <div id="portfolio-item-toast" class="fade">
+                                    <div class="portfolio-item-toast-body px-3">
+                                        <h6>GRAPHIC</h6>
+                                        <h4>FIMLOR EXPERIENCE</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix blue">
+                        <div class="card portfolio-item">
+                            <div class="card-body p-0">
+                                <img src="assets/img/3.jpg">
+                                <div id="portfolio-item-toast" class="fade">
+                                    <div class="portfolio-item-toast-body px-3">
+                                        <h6>GRAPHIC</h6>
+                                        <h4>FIMLOR EXPERIENCE</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix blue">
+                        <div class="card portfolio-item">
+                            <div class="card-body p-0">
+                                <img src="assets/img/4.jpg">
+                                <div id="portfolio-item-toast" class="fade">
+                                    <div class="portfolio-item-toast-body px-3">
+                                        <h6>GRAPHIC</h6>
+                                        <h4>FIMLOR EXPERIENCE</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix pink">
+                        <div class="card portfolio-item">
+                            <div class="card-body p-0">
+                                <img src="assets/img/5.jpg">
+                                <div id="portfolio-item-toast" class="fade">
+                                    <div class="portfolio-item-toast-body px-3">
+                                        <h6>GRAPHIC</h6>
+                                        <h4>FIMLOR EXPERIENCE</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix blue">
+                        <div class="card portfolio-item">
+                            <div class="card-body p-0">
+                                <img src="assets/img/6.jpg">
+                                <div id="portfolio-item-toast" class="fade">
+                                    <div class="portfolio-item-toast-body px-3">
+                                        <h6>GRAPHIC</h6>
+                                        <h4>FIMLOR EXPERIENCE</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"></div>
+            </div>
+        </div>
+    </section>
     <!--Start Scripts-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="assets/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="assets/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script src="assets/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
     <script src="script.js"></script>
     <script>
         var owl = $('.owl-carousel');
-        //7ot el div beta3 el text gowa hena we 23melo animateOut we animateIn
         owl.owlCarousel({
             animateOut: 'animate__fadeOut animate__zoomOut ',
             animateIn: 'animate__fadeIn animate__zoomIn animate__slow',
@@ -267,6 +531,48 @@
     </script>
     <script>
         new WOW().init();
+    </script>
+    <script>
+        //TODO Check what is wrong with scrolling
+        /* Code for changing active 
+        link on clicking */
+        var btns = $("#navigation .navbar-nav .nav-link");
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click",
+                function () {
+                    var current = document
+                        .getElementsByClassName("active");
+
+                    current[0].className = current[0]
+                        .className.replace(" active", "");
+
+                    this.className += " active";
+                });
+        }
+
+        /* Code for changing active 
+        link on Scrolling */
+        $(window).scroll(function () {
+            var distance = $(window).scrollTop();
+            $('.page-section').each(function (i) {
+
+                if ($(this).position().top
+                    <= distance + 250) {
+
+                    $('.navbar-nav a.active')
+                        .removeClass('active');
+
+                    $('.navbar-nav a').eq(i)
+                        .addClass('active');
+                }
+            });
+        }).scroll();
+    </script>
+    <script>
+        var containerEl = document.querySelector('.container-gallery');
+
+        var mixer = mixitup(containerEl);
     </script>
     <!--End Scripts-->
 </body>
