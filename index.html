@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="assets/LineHoverStyles-main/css/base.css">
+    <link rel="shortcut icon" href="assets/img/logo-dark.png">
     <link rel="stylesheet" href="style.css">
     <title>Linoor - Digital Agency HTML Template | Home 03</title>
 </head>
@@ -80,19 +81,35 @@
                     </ul>
                 </div>
                 <!-- TODO Implement a Modal fullscreen with an animation -->
-                <i id="navbar-search-icon" class="fas fa-search"></i>
-                <div id="navbar-contactus" class="d-flex flex-row border-start">
-                    <div id="navbar-contactus-img" style="margin-right: 30px;">
-                        <i class="fas fa-comments fa-3x"></i>
-                    </div>
-                    <div id="navbar-contactus-details">
-                        <h6>Call Anytime</h6>
-                        <h6>+201011575136</h6>
-                    </div>
+                <button class="btn search-toggler" data-toggle="modal" data-target="#fsModal">
+                    <i id="navbar-search-icon" class="fas fa-search"></i></div></button>
+            </div>
+            <div id="navbar-contactus" class="d-flex flex-row border-start">
+                <div id="navbar-contactus-img" style="margin-right: 30px;">
+                    <i class="fas fa-comments fa-3x"></i>
                 </div>
+                <div id="navbar-contactus-details">
+                    <h6>Call Anytime</h6>
+                    <h6>+201011575136</h6>
+                </div>
+            </div>
             </div>
         </nav>
     </header>
+    <!--Start Search Popup-->
+    <div class="search-popup">
+        <div class="search-popup__overlay custom-cursor__overlay">
+            <div class="cursor" style="top: 286px; left: 872px;"></div>
+            <div class="cursor-follower" style="top: 264px; left: 850px;"></div>
+        </div><!-- /.search-popup__overlay -->
+        <div class="search-popup__inner">
+            <form action="#" class="search-popup__form">
+                <input type="text" name="search" placeholder="Type here to Search....">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div><!-- /.search-popup__inner -->
+    </div>
+    <!--End Search Popup-->
     <!--End Header-->
     <!--Start Welcome Section-->
     <section id="welcome" class="page-section">
@@ -113,7 +130,7 @@
                                     <h3>New Linoor Ag<span class="main-font-color">en</span>cy</h3>
                                 </div>
                             </div>
-                            <img src="assets/img/welcome1.jpg">
+                            <div class="owl-carousel-img" style="background-image: url(assets/img/welcome1.jpg);"></div>
                         </div>
                         <div class="owl-carousel-items-wrapper">
                             <div class="owl-carousel-titles">
@@ -127,7 +144,7 @@
                                     <h3>New Linoor Ag<span class="main-font-color">en</span>cy</h3>
                                 </div>
                             </div>
-                            <img src="assets/img/welcome2.jpg">
+                            <div class="owl-carousel-img" style="background-image: url(assets/img/welcome2.jpg);"></div>
                         </div>
                     </div>
                 </div>
@@ -295,7 +312,7 @@
                             <img src="assets/img/featured-image-3.jpg">
                         </div>
                         <div class="experience-us-rounded-wrapper">
-                            <div class="experience-us-rounded">
+                            <div class="experience-us-rounded main-linear-gradient">
                                 <div class="experience-us-rounded-inner position-relative ">
                                     <div id="experience-us-outer"
                                         class="custom-rounded-shape-dark bg-transparent border border-1 border-grey position-relative p-0"
@@ -514,7 +531,7 @@
     <section id="clients1" class="section-parallax">
         <div class="background-layer-dark">
             <div class="container">
-                <div id="counter-items-list" class="row">
+                <div id="counter-items-list" class="row text-center">
                     <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 border-end">
                         <div class="counter-item link link--elara">
                             <h1 class="count clients-counter-h1">8705</h1>
@@ -1296,6 +1313,7 @@
     <script src="assets/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="script.js"></script>
     <script>
         new WOW().init();
