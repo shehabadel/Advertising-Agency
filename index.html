@@ -14,11 +14,15 @@
     <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="assets/LineHoverStyles-main/css/base.css">
     <link rel="stylesheet" href="style.css">
     <title>Linoor - Digital Agency HTML Template | Home 03</title>
 </head>
 
 <body>
+    <!--Start Scroll Up Button-->
+    <button onclick="topFunction()" id="scrollUp" title="Wheee">^</button>
+    <!--End Scroll Up Button-->
     <!--Start Header-->
     <header class="header-height">
         <nav id="navigation" class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
@@ -32,7 +36,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li id="navbar-dropdown" class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active header-nav-item-font" href="#welcome"
+                            <a class="nav-link dropdown-toggle link link--elara header-nav-item-font" href="#welcome"
                                 aria-current="page" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 HOME
                             </a>
@@ -52,25 +56,26 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-nav-item-font" href="#about">ABOUT</a>
+                            <a class="nav-link link link--elara header-nav-item-font" href="#about">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-nav-item-font" href="#services">SERVICES</a>
+                            <a class="nav-link link link--elara header-nav-item-font" href="#services">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-nav-item-font" href="#">PORTFOLIO</a>
+                            <a class="nav-link link link--elara header-nav-item-font" href="#portfolio">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-nav-item-font" href="#">TEAM</a>
+                            <a class="nav-link link link--elara header-nav-item-font" href="#team">TEAM</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-nav-item-font" href="#">TESTIMONIALS</a>
+                            <a class="nav-link link link--elara header-nav-item-font"
+                                href="#testimonials">TESTIMONIALS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-nav-item-font" href="#">BLOG</a>
+                            <a class="nav-link link link--elara header-nav-item-font" href="#blog">BLOG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link header-nav-item-font" href="#">CONTACT</a>
+                            <a class="nav-link link link--elara header-nav-item-font" href="#contactus">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -95,22 +100,22 @@
         <div id="owl-carousel-section" class="container-fluid mb-4">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 p-0">
-                    <div class="owl-carousel">
-                        <div id="owl-carousel-items-wrapper">
+                    <div class="owl-carousel owl-welcome">
+                        <div class="owl-carousel-items-wrapper">
                             <div class="owl-carousel-titles">
-                                <div class="wow animate__fadeInUp" data-wow-duration="3.5s"
+                                <div class="wow animate__fadeInUp" data-wow-duration="3.0s"
                                     data-wow-iteration="infinite">
                                     <h1>Welcome to Linoor <span class="main-font-color">Agency</span></h1>
                                 </div>
                                 <div class="wow animate__fadeInUp" data-wow-duration="3s" data-wow-iteration="infinite"
-                                    data-wow-delay="1s">
+                                    data-wow-delay="0.5s">
                                     <h2>Discover</h2>
                                     <h3>New Linoor Ag<span class="main-font-color">en</span>cy</h3>
                                 </div>
                             </div>
                             <img src="assets/img/welcome1.jpg">
                         </div>
-                        <div id="owl-carousel-items-wrapper">
+                        <div class="owl-carousel-items-wrapper">
                             <div class="owl-carousel-titles">
                                 <div class="wow animate__fadeInUp" data-wow-duration="3.5s"
                                     data-wow-iteration="infinite">
@@ -149,10 +154,10 @@
                         <h1 class="display-1 header-1 wow animate__fadeInUp mt-3" data-wow-duration="3s">We're the best
                             agency in downtown <span class="main-font-color">.</span></h1>
                     </div>
-                    <div>
-                        <p class="text-1">We are commited to providing our customers with exceptional service while
+                    <div class="text-1-wrapper">
+                        <h6 class="text-1">We are commited to providing our customers with exceptional service while
                             offering our employees
-                            the best training</p>
+                            the best training</h6>
                     </div>
                     <div>
                         <p class="text-2">Lorem Ipsum is simply dummy text of free available in market the<br> printing
@@ -171,9 +176,9 @@
                             </div>
                         </div>
                     </div>
-                    <div id="discover-more-btn" class="my-3">
+                    <div class="discover-more-btn my-3">
                         <a class="btn btn-rounded">
-                            <span id="discover-more-btn-text">Discover More</span>
+                            <span class="discover-more-btn-text">Discover More</span>
                         </a>
                     </div>
                 </div>
@@ -190,7 +195,6 @@
                     <div>
                     </div>
                     <div class="row justify-content-around">
-                        <!--TODO Check responsive of this section-->
                         <div class="col-xs-12 col-xm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
                             <div class="card what-we-offering-cards wow animate__fadeInUp" data-wow-duration="1s"
                                 data-wow-delay="100ms">
@@ -292,10 +296,11 @@
                         </div>
                         <div class="experience-us-rounded-wrapper">
                             <div class="experience-us-rounded">
-                                <div class="position-relative ">
+                                <div class="experience-us-rounded-inner position-relative ">
                                     <div id="experience-us-outer"
-                                        class="custom-rounded-shape-dark bg-transparent border border-1 border-grey position-relative p-0">
-                                        <a class="custom-rounded-shape-dark bg-transparent experience-us-button-wrapper"
+                                        class="custom-rounded-shape-dark bg-transparent border border-1 border-grey position-relative p-0"
+                                        style="animation-delay: 0s;">
+                                        <a class="custom-rounded-shape-dark bg-transparent experience-us-button-wrapper "
                                             href="https://www.youtube.com/watch?v=Y3LGT3Q2hjo" target="_blank">
                                             <div class="experience-us-icon-wrapper">
                                                 <i class="fas fa-play experience-us-icon"></i>
@@ -303,7 +308,7 @@
                                         </a>
                                     </div>
                                     <h1 class="experience-us-header">Agency that gets excited about</h1>
-                                    <a class="experience-us-link">
+                                    <a id="experience-us-link" class="experience-us-link link link--elara">
                                         <h6>Read More</h6>
                                     </a>
                                 </div>
@@ -314,29 +319,29 @@
             </div>
         </div>
     </section>
-    <section id="services" class="services-section">
+    <section id="services" class="section-lines-background">
         <div class="container">
             <div class="row p-3">
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
                     <h1 class="text-color-dark section-header text-start mt-5">We do more than ever platforms<span
-                            class="main-font-color">.</span>
-                        <article class="d-flex flex-row justify-content-between mt-5">
-                            <img class="w-50 border rounded rounded-3" src="assets/img/welcome1.jpg">
-                            <p class="services-paragraph">There are many variants of passages the majority have suffered
-                                alteration in some foor randomised words believable.</p>
-                        </article>
-                        <div class="services-progress">
-                            <h6>Digitial Marketing</h6>
-                            <div class="progress w-50">
-                                <!--TODO Check what is wrong with tooltip-->
-                                <div id="progress-bar" class="progress-bar w-75" role="progressbar" aria-valuenow="75"
-                                    aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip"
-                                    data-bs-placement="top" title="75%">
-                                    <span class="popOver" data-toggle="tooltip" data-placement="top" title="75%">
-                                    </span>
-                                </div>
+                            class="main-font-color">.</span></h1>
+                    <article class="d-flex flex-row justify-content-between mt-5">
+                        <img class="w-50 border rounded rounded-3" src="assets/img/welcome1.jpg">
+                        <p class="services-paragraph">There are many variants of passages the majority have suffered
+                            alteration in some foor randomised words believable.</p>
+                    </article>
+                    <div class="services-progress">
+                        <h6>Digitial Marketing</h6>
+                        <div class="progress w-50">
+                            <!--TODO Check what is wrong with tooltip-->
+                            <div id="progress-bar" class="progress-bar w-75" role="progressbar" aria-valuenow="75"
+                                aria-valuemin="0" aria-valuemax="100" data-bs-toggle="tooltip" data-bs-placement="top"
+                                title="75%">
+                                <span class="popOver" data-toggle="tooltip" data-placement="top" title="75%">
+                                </span>
                             </div>
                         </div>
+                    </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mt-5">
                     <div class="accordion" id="accordionPanelsStayOpenExample">
@@ -397,115 +402,891 @@
         </div>
     </section>
     <!--End Experience Us Section-->
+    <!--Start Portfolio Section-->
     <section id="portfolio">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                    <h1 class="text-color-dark section-header text-start mt-5">Work ShowCase<span
-                            class="main-font-color">.</span>
+                    <h1 class="text-color-dark section-header mt-5 portfolio-header">Work ShowCase<span
+                            class="main-font-color">.</span></h1>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
-                    <ul id="show-case-navbar" class="nav justify-content-end mt-5 controls">
+                    <ul class="portfolio-show-case-navbar nav mt-5 controls">
                         <li class="nav-item">
-                            <a class="nav-link control" data-filter="all" >All</a>
+                            <a class="nav-link link link--elara control" data-filter="all">All</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link control" data-filter=".green" >Illustration</a>
+                            <a class="nav-link link link--elara control" data-filter=".green">Illustration</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link control" data-filter=".blue" >Photography</a>
+                            <a class="nav-link link link--elara control" data-filter=".blue">Photography</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link control" data-filter=".pink" >Web Design</a>
+                            <a class="nav-link control link link--elara" data-filter=".pink">Web Design</a>
                         </li>
                     </ul>
                 </div>
-                <div id="portfolio-gallery" class="row mt-3 container-gallery">
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix green">
-                        <div class="card portfolio-item">
-                            <div class="card-body p-0">
-                                <img src="assets/img/1.jpg">
-                                <div id="portfolio-item-toast" class="fade">
-                                    <div class="portfolio-item-toast-body px-3">
-                                        <h6>GRAPHIC</h6>
-                                        <h4>FIMLOR EXPERIENCE</h4>
-                                    </div>
+            </div>
+            <div id="portfolio-gallery" class="row mt-3 container-gallery justify-content-center">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix green">
+                    <div class="card portfolio-item">
+                        <div class="card-body p-0">
+                            <img class="w-100" src="assets/img/1.jpg">
+                            <div class=" portfolio-item-toast fade">
+                                <div class="portfolio-item-toast-body px-3">
+                                    <h6>GRAPHIC</h6>
+                                    <h4>FIMLOR EXPERIENCE</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix green">
-                        <div class="card portfolio-item">
-                            <div class="card-body p-0">
-                                <img src="assets/img/2.jpg">
-                                <div id="portfolio-item-toast" class="fade">
-                                    <div class="portfolio-item-toast-body px-3">
-                                        <h6>GRAPHIC</h6>
-                                        <h4>FIMLOR EXPERIENCE</h4>
-                                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix green">
+                    <div class="card portfolio-item">
+                        <div class="card-body p-0">
+                            <img class="w-100" src="assets/img/2.jpg">
+                            <div class=" portfolio-item-toast fade">
+                                <div class="portfolio-item-toast-body px-3">
+                                    <h6>GRAPHIC</h6>
+                                    <h4>FIMLOR EXPERIENCE</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix blue">
-                        <div class="card portfolio-item">
-                            <div class="card-body p-0">
-                                <img src="assets/img/3.jpg">
-                                <div id="portfolio-item-toast" class="fade">
-                                    <div class="portfolio-item-toast-body px-3">
-                                        <h6>GRAPHIC</h6>
-                                        <h4>FIMLOR EXPERIENCE</h4>
-                                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix blue">
+                    <div class="card portfolio-item">
+                        <div class="card-body p-0">
+                            <img class="w-100" src="assets/img/3.jpg">
+                            <div class="portfolio-item-toast fade">
+                                <div class="portfolio-item-toast-body px-3">
+                                    <h6>GRAPHIC</h6>
+                                    <h4>FIMLOR EXPERIENCE</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix blue">
-                        <div class="card portfolio-item">
-                            <div class="card-body p-0">
-                                <img src="assets/img/4.jpg">
-                                <div id="portfolio-item-toast" class="fade">
-                                    <div class="portfolio-item-toast-body px-3">
-                                        <h6>GRAPHIC</h6>
-                                        <h4>FIMLOR EXPERIENCE</h4>
-                                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix blue">
+                    <div class="card portfolio-item">
+                        <div class="card-body p-0">
+                            <img class="w-100" src="assets/img/4.jpg">
+                            <div class="portfolio-item-toast fade">
+                                <div class="portfolio-item-toast-body px-3">
+                                    <h6>GRAPHIC</h6>
+                                    <h4>FIMLOR EXPERIENCE</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix pink">
-                        <div class="card portfolio-item">
-                            <div class="card-body p-0">
-                                <img src="assets/img/5.jpg">
-                                <div id="portfolio-item-toast" class="fade">
-                                    <div class="portfolio-item-toast-body px-3">
-                                        <h6>GRAPHIC</h6>
-                                        <h4>FIMLOR EXPERIENCE</h4>
-                                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix pink">
+                    <div class="card portfolio-item">
+                        <div class="card-body p-0">
+                            <img class="w-100" src="assets/img/5.jpg">
+                            <div class="portfolio-item-toast fade">
+                                <div class="portfolio-item-toast-body px-3">
+                                    <h6>GRAPHIC</h6>
+                                    <h4>FIMLOR EXPERIENCE</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix blue">
-                        <div class="card portfolio-item">
-                            <div class="card-body p-0">
-                                <img src="assets/img/6.jpg">
-                                <div id="portfolio-item-toast" class="fade">
-                                    <div class="portfolio-item-toast-body px-3">
-                                        <h6>GRAPHIC</h6>
-                                        <h4>FIMLOR EXPERIENCE</h4>
-                                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mix blue">
+                    <div class="card portfolio-item">
+                        <div class="card-body p-0">
+                            <img class="w-100" src="assets/img/6.jpg">
+                            <div class="portfolio-item-toast fade">
+                                <div class="portfolio-item-toast-body px-3">
+                                    <h6>GRAPHIC</h6>
+                                    <h4>FIMLOR EXPERIENCE</h4>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col"></div>
+        </div>
+    </section>
+    <!--End Portfolio Section-->
+    <!--Start Clients-1 Section-->
+    <section id="clients1" class="section-parallax">
+        <div class="background-layer-dark">
+            <div class="container">
+                <div id="counter-items-list" class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 border-end">
+                        <div class="counter-item link link--elara">
+                            <h1 class="count clients-counter-h1">8705</h1>
+                            <h2 class="clients-counter-h2">Projects Completed</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 border-end">
+                        <div class="counter-item link link--elara">
+                            <h1 class="count clients-counter-h1">480</h1>
+                            <h2 class="clients-counter-h2">Active Clients</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 border-end">
+                        <div class="counter-item link link--elara">
+                            <h1 class="count clients-counter-h1">626</h1>
+                            <h2 class="clients-counter-h2">Cups of Coffee</h2>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3 border-end">
+                        <div class="counter-item link link--elara">
+                            <h1 class="count clients-counter-h1">9704</h1>
+                            <h2 class="clients-counter-h2">Happy Clients</h2>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    <!--End Clients-1 Section-->
+    <!--Start Clients-2 Section-->
+    <section id="clients2">
+        <div class="container-fluid">
+            <div id="clients2-headers" class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4 tip-box-container">
+                    <div class="tip-box border-radius-10px p-5">
+                        <div class="tip-box-inner pt-5">
+                            <h2>We're commited to deliver High Quality Products.</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-8 col-xl-8 col-xxl-8">
+                    <div class="bg-white pt-5 border-radius-10px" style="transform: translateY(10px);">
+                        <div class="pt-5">
+                            <h1 class="section-header text-color-dark clients-header box-shadow">We are trusted by
+                                more<br> than
+                                6260
+                                Clients <span class="main-font-color">.</span></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div class="feature-card">
+                        <div class="feature-card-rounded">
+                            <h6 class="feature-card-rounded-text">
+                                01
+                            </h6>
+                        </div>
+                        <div class="feature-card-text">
+                            <h3>Total Design Freedom For Everyone</h3>
+                            <h6>Core Features</h6>
+                        </div>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-card-rounded">
+                            <h6 class="feature-card-rounded-text">
+                                02
+                            </h6>
+                        </div>
+                        <div class="feature-card-text">
+                            <h3>BASIC RULES OF RUNNING WEB AGENCY</h3>
+                            <h6>Core Features</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                    <div>
+                        <div>
+                            <p class="text-2">There are many variations of passages of Lorem Ipsum available, but the
+                                majority have suffered alteration in some form, simply free text by injected humour, or
+                                randomised.</p>
+                        </div>
+                        <!--<article class="d-flex flex-row justify-content-between mt-5">
+                        <img class="w-25 border rounded rounded-3" src="assets/img/featured-image-5.jpg">
+                        <ul class="random-text-list clients-2-article-ul ps-0 ms-3">
+                            <li><i class="fas fa-check me-3"></i>Suspe ndisse suscipit sagittis leo.</li>
+                            <li><i class="fas fa-check me-3"></i>Entum estibulum dignissim posuere.</li>
+                            <li><i class="fas fa-check me-3"></i>If you are going to use a passage.</li>
+                            <li><i class="fas fa-check me-3"></i>Lorem Ipsum on the tend to repeat.</li>
+                        </ul>
+                    </article>-->
+                        <div class="clients-2-article">
+                            <div class="border-radius-10px">
+                                <img class="border-radius-10px" src="assets/img/featured-image-5.jpg">
+                            </div>
+                            <ul class="random-text-list clients-2-article-ul ps-0 ms-3">
+                                <li><i class="fas fa-check me-3"></i><span>Suspe ndisse suscipit sagittis leo.</span>
+                                </li>
+                                <li><i class="fas fa-check me-3"></i><span>Entum estibulum dignissim posuere.</span>
+                                </li>
+                                <li><i class="fas fa-check me-3"></i><span>If you are going to use a passage.</span>
+                                </li>
+                                <li><i class="fas fa-check me-3"></i><span>Lorem Ipsum on the tend to repeat.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Clients-2 Section-->
+    <!--Start Team Section-->
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <h1 class="section-header">Meet the expert team <span class="main-font-color">.</span></h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 p-0">
+                    <div class="owl-carousel owl-team">
+                        <div class="team-item">
+                            <div class="card portfolio-item">
+                                <div class="card-body">
+                                    <img src="assets/img/team-1.jpg">
+                                    <div class="portfolio-item-toast team-portfolio-item-toast fade">
+                                        <div class="portfolio-item-toast-body">
+                                            <div class="social-media-items">
+                                                <ul
+                                                    class="d-flex flex-row justify-content-between social-media-items-ul">
+                                                    <li>
+                                                        <a><i class="fab fa-facebook-square fa-2x"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a><i class="fab fa-twitter fa-2x"></i></a>
+                                                    </li>
+                                                    <li>
+                                                        <a><i class="fab fa-instagram fa-2x"></i></a>
+                                                    </li>
+                                                    <li><a><i class="fab fa-pinterest fa-2x"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <h5>Kevin Martin</h5>
+                                    <h6>Designer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="card portfolio-item">
+                                <div class="card-body">
+                                    <img src="assets/img/team-2.jpg">
+                                    <div class="portfolio-item-toast team-portfolio-item-toast fade">
+                                        <div class="portfolio-item-toast-body">
+                                            <div class="social-media-items">
+                                                <ul
+                                                    class="d-flex flex-row justify-content-between social-media-items-ul">
+                                                    <li>
+                                                        <a>
+                                                            <i class="fab fa-facebook-square fa-2x"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            <i class="fab fa-twitter fa-2x"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            <i class="fab fa-instagram fa-2x"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            <i class="fab fa-pinterest fa-2x"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <h5>Jessica Brown</h5>
+                                    <h6>Designer</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="team-item">
+                            <div class="card portfolio-item">
+                                <div class="card-body">
+                                    <img src="assets/img/team-3.jpg">
+                                    <div class="portfolio-item-toast team-portfolio-item-toast fade">
+                                        <div class="portfolio-item-toast-body">
+                                            <div class="social-media-items">
+                                                <ul
+                                                    class="d-flex flex-row justify-content-between social-media-items-ul">
+                                                    <li>
+                                                        <a>
+                                                            <i class="fab fa-facebook-square fa-2x"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            <i class="fab fa-twitter fa-2x"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            <i class="fab fa-instagram fa-2x"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a>
+                                                            <i class="fab fa-pinterest fa-2x"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <h5>John Albert</h5>
+                                    <h6>Designer</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Team Section-->
+    <!--Start Customer1-->
+    <section id="customer1" class="section-parallax section-parallax-customer">
+        <div class="container p-5">
+            <div class="row justify-content-center">
+                <div class="col-12 align-self-center">
+                    <div class="since-rounded ">
+                        <i class="fab fa-pinterest fa-3x main-font-color"></i>
+                    </div>
+                    <h1 class="section-header">GREAT THINGS IN BUSINESS ARE NEVER DONE BY ONE PERSON. <span
+                            class="main-font-color">THEY’RE DONE BY A TEAM OF PEOPLE.</span></h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Customer1-->
+    <!--Start Customer2-->
+    <section id="testimonials" class="section-lines-background">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col mt-5">
+                    <h1 class="section-header text-start text-color-dark">Customer Feedbacks<span
+                            class="main-font-color">.</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel owl-testimonials">
+                    <div class="item">
+                        <div class="customer-feedback">
+                            <div class="customer-feedback-wrapper">
+                                <div class="customer-feedback-info">
+                                    <div class="customer-feedback-info-avatar">
+                                        <img src="assets/img/author-1.jpg">
+                                    </div>
+                                    <div class="customer-feedback-info-text">
+                                        <h5>Shirley Smith</h5>
+                                        <h6>Director</h6>
+                                    </div>
+                                </div>
+                                <div class="customer-feedback-icon">
+                                    <span class="main-font-color">“</span>
+                                </div>
+
+                            </div>
+                            <div class="customer-feedback-text">
+                                <p>There are many variations of passages of lorem ipsum available but the
+                                    majority have suffered alteration in some form, by injected humour, or randomised
+                                    words which don't look even slightly believable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="customer-feedback">
+                            <div class="customer-feedback-wrapper">
+                                <div class="customer-feedback-info">
+                                    <div class="customer-feedback-info-avatar">
+                                        <img src="assets/img/author-2.jpg">
+                                    </div>
+                                    <div class="customer-feedback-info-text">
+                                        <h5>Mike Hardson</h5>
+                                        <h6>Director</h6>
+                                    </div>
+                                </div>
+                                <div class="customer-feedback-icon">
+                                    <span class="main-font-color">“</span>
+                                </div>
+
+                            </div>
+                            <div class="customer-feedback-text">
+                                <p>There are many variations of passages of lorem ipsum available but the
+                                    majority have suffered alteration in some form, by injected humour, or randomised
+                                    words which don't look even slightly believable.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="customer-feedback">
+                            <div class="customer-feedback-wrapper">
+                                <div class="customer-feedback-info">
+                                    <div class="customer-feedback-info-avatar">
+                                        <img src="assets/img/author-3.jpg">
+                                    </div>
+                                    <div class="customer-feedback-info-text">
+                                        <h5>Sarah Albert</h5>
+                                        <h6>Director</h6>
+                                    </div>
+                                </div>
+                                <div class="customer-feedback-icon">
+                                    <span class="main-font-color">“</span>
+                                </div>
+
+                            </div>
+                            <div class="customer-feedback-text">
+                                <p>There are many variations of passages of lorem ipsum available but the
+                                    majority have suffered alteration in some form, by injected humour, or randomised
+                                    words which don't look even slightly believable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Customer-2-->
+    <!--Start Articles-1 Section-->
+    <section>
+        <div class="container-fluid p-5 border-bottom">
+            <div class="row">
+                <div class="owl-carousel owl-articles">
+                    <div class="item">
+                        <img src="assets/img/2.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/2.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/2.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/2.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/2.png">
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/2.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Articles-1 Section-->
+    <!--Start Articles-2 Section-->
+    <section id="blog" class="mb-3">
+        <div class="container mt-5">
+            <div class="row">
+                <h1 class="section-header text-color-dark">Latest News & Articles<span class="main-font-color">.</span>
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <div class="blog-card-img">
+                            <img src="assets/img/news-1.jpg">
+                        </div>
+                        <div class="blog-card-social">
+                            <ul class="list-group list-group-horizontal border-0">
+                                <li class="list-group-item"><span class="list-group-item-icon far fa-clock"></span><span
+                                        class="list-group-item-text">20 Mar</span></li>
+                                <li class="list-group-item"><span
+                                        class="list-group-item-icon far fa-user-circle"></span><span
+                                        class="list-group-item-text">Admin</span></li>
+                                <li class="list-group-item"><span
+                                        class="list-group-item-icon far fa-comments"></span><span
+                                        class="list-group-item-text">2 Comments</span></li>
+                            </ul>
+                        </div>
+                        <div class="blog-card-header">
+                            <h3>Basic rules of running web agency business</h3>
+                        </div>
+                        <div class="blog-card-text">
+                            <p>Lorem ipsum is simply free text used by copytyping refreshing.</p>
+                        </div>
+                        <div class="blog-card-button">
+                            <a href="#" class="">></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <div class="blog-card-img">
+                            <img src="assets/img/news-2.jpg">
+                        </div>
+                        <div class="blog-card-social">
+                            <ul class="list-group list-group-horizontal border-0">
+                                <li class="list-group-item"><span class="list-group-item-icon far fa-clock"></span><span
+                                        class="list-group-item-text">20 Mar</span></li>
+                                <li class="list-group-item"><span
+                                        class="list-group-item-icon far fa-user-circle"></span><span
+                                        class="list-group-item-text">Admin</span></li>
+                                <li class="list-group-item"><span
+                                        class="list-group-item-icon far fa-comments"></span><span
+                                        class="list-group-item-text">2 Comments</span></li>
+                            </ul>
+                        </div>
+                        <div class="blog-card-header">
+                            <h3>Basic rules of running web agency business</h3>
+                        </div>
+                        <div class="blog-card-text">
+                            <p>Lorem ipsum is simply free text used by copytyping refreshing.</p>
+                        </div>
+                        <div class="blog-card-button">
+                            <a href="#" class="">></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <div class="blog-card">
+                        <div class="blog-card-img">
+                            <img src="assets/img/news-3.jpg">
+                        </div>
+                        <div class="blog-card-social">
+                            <ul class="list-group list-group-horizontal border-0">
+                                <li class="list-group-item"><span class="list-group-item-icon far fa-clock"></span><span
+                                        class="list-group-item-text">20 Mar</span></li>
+                                <li class="list-group-item"><span
+                                        class="list-group-item-icon far fa-user-circle"></span><span
+                                        class="list-group-item-text">Admin</span></li>
+                                <li class="list-group-item"><span
+                                        class="list-group-item-icon far fa-comments"></span><span
+                                        class="list-group-item-text">2 Comments</span></li>
+                            </ul>
+                        </div>
+                        <div class="blog-card-header">
+                            <h3>Basic rules of running web agency business</h3>
+                        </div>
+                        <div class="blog-card-text">
+                            <p>Lorem ipsum is simply free text used by copytyping refreshing.</p>
+                        </div>
+                        <div class="blog-card-button">
+                            <a href="#" class="">></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Articles-2 Section-->
+    <!--Start Form Section-->
+    <section class="form">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-6 form-mt">
+                    <div class="row">
+                        <h1 class="section-header  text-start">We are always here to help you<span
+                                class="main-font-color">.</span></h1>
+                    </div>
+                    <div class="row">
+                        <p class="form-paragraph">There are many variatns of passages the majority have suffered
+                            alteration in some foor randomised words believable.</p>
+                    </div>
+                    <div class="row">
+                        <ul class="list-group">
+                            <li class="list-group-item d-flex">
+                                <div class="form-icon">
+                                    <span class="fas fa-map-marker-alt"></span>
+                                </div>
+                                <div class="form-info">
+                                    <h6>Visit Us</h6>
+                                    <h5>66 Brooklyn Street, New York, USA</h5>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <div class="form-icon">
+                                    <span class="fas fa-envelope"></span>
+                                </div>
+                                <div class="form-info">
+                                    <h6>Email Address</h6>
+                                    <h5>needhelp@linoor.com</h5>
+                                </div>
+                            </li>
+                            <li class="list-group-item d-flex">
+                                <div class="form-icon">
+                                    <span class="fas fa-phone"></span>
+                                </div>
+                                <div class="form-info">
+                                    <h6>Call Now</h6>
+                                    <h5>666 888 000</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 form-mt">
+                    <div class="row mt-3">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <input type="text" class="form-control" placeholder="Your Name" id="inputName">
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <input type="email" class="form-control" placeholder="Your Email" id="inputEmal"
+                                aria-describedby="emailHelp">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <input type="tel" class="form-control" placeholder="Phone Number" id="inputNumber">
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <input type="text" class="form-control" placeholder="Subject" id="inputSubject">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <textarea type="text" class="form-control" placeholder="Write Message"
+                                id="inputMessage"></textarea>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-sm-12 col-md-12 col-lg-12">
+                            <div class="discover-more-btn my-3">
+                                <button type="submit" class="btn btn-rounded">
+                                    <span class="discover-more-btn-text">Discover More</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Form Section-->
+    <!--Start Map Section-->
+    <section>
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <iframe class="map"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27630.762766262258!2d31.18553098159253!3d30.04129444116229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145846c5d4058d01%3A0x3802da3bf4a72d0!2sAl%20Duqqi%2C%20Ad%20Doqi%2C%20Dokki%2C%20Giza%20Governorate!5e0!3m2!1sen!2seg!4v1630956788081!5m2!1sen!2seg"
+                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Map Section-->
+    <!--Start Offices Section-->
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <h1 class="section-header text-color-dark">Offices Near You<span class="main-font-color">.</span>
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="card office-card">
+                        <div class="card-header">
+                            Austin
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                22 Texas West Hills
+                            </div>
+                            <div class="card-text">
+                                needhelp@linoor.com
+                            </div>
+                            <div class="card-text">
+                                666 888 000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="card office-card">
+                        <div class="card-header">
+                            Boston
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                5 Federal Street Boston
+                            </div>
+                            <div class="card-text">
+                                needhelp@linoor.com
+                            </div>
+                            <div class="card-text">
+                                666 888 000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="card office-card">
+                        <div class="card-header">
+                            New york
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                8th Brooklyn New York
+                            </div>
+                            <div class="card-text">
+                                needhelp@linoor.com
+                            </div>
+                            <div class="card-text">
+                                666 888 000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="card office-card">
+                        <div class="card-header">
+                            Baltimore
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text">
+                                3 Lombabr 50 Baltimore
+                            </div>
+                            <div class="card-text">
+                                needhelp@linoor.com
+                            </div>
+                            <div class="card-text">
+                                666 888 000
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="invite-wrapper">
+                        <div class="section-header text-start text-color-dark">
+                            <h1>Let's Get your project<br> started!</h1>
+                        </div>
+                        <div class="invite-button">
+                            <div class="discover-more-btn my-3">
+                                <button type="submit" class="btn btn-rounded">
+                                    <span class="discover-more-btn-text">Contact with Us</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Offices Section-->
+    <!--Start Site Map-->
+    <section id="contactus" class="footer-background">
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-md-6 col-lg-6 footer-col-margin">
+                        <div class="footer-logo">
+                            <img src="assets/img/logo-dark.png">
+                        </div>
+                        <div class="footer-text">
+                            <p>Welcome to our web design agency. Lorem ipsum simply free text dolor sited amet cons cing
+                                elit.</p>
+                        </div>
+                        <div class="footer-social-media">
+                            <ul class="list-group list-group-horizontal footer-social-media-items-ul">
+                                <li class="list-group-item">
+                                    <a>
+                                        <i class="fab fa-facebook-square fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item">
+                                    <a>
+                                        <i class="fab fa-facebook-square fa-2x"></i>
+                                    </a>
+                                </li>
+                                <li class="list-group-item"><a>
+                                        <i class="fab fa-instagram fa-2x"></i>
+                                    </a></li>
+                                <li class="list-group-item"><a>
+                                        <i class="fab fa-pinterest fa-2x"></i>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 footer-col-margin footer-explore">
+                        <h6 class="text-uppercase">
+                            Explore
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset link link--elara">About</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset link link--elara">Meet Our Team</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset link link--elara">Our Portfolio</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset link link--elara">Latest News</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset link link--elara">Contact</a>
+                        </p>
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 footer-col-margin footer-explore">
+                        <p>
+                            <a href="#!" class="text-reset link link--elara">Support</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset link link--elara">Privacy Policy</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset link link--elara">Terms Of Use</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset link link--elara">Help</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-sm-12 col-md-6 col-lg-6 footer-explore">
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Contact
+                        </h6>
+                        <p><i class="fas fa-home me-3 main-font-color"></i> 66 Brooklyn Street, New York <br> United
+                            States of America
+                        </p>
+                        <p><i class="fas fa-phone me-3 main-font-color"></i> 666 888 000</p>
+                        <p>
+                            <i class="fas fa-envelope me-3 main-font-color"></i>
+                            needhelp@linoor.com
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-6 col-lg-6 footer-explore">
+                        <h6 class="text-uppercase mb-4">
+                            Newsletter
+                        </h6>
+                        <input id="email" type="email" class="form-control" name="email" value=""
+                            placeholder="Email Address" required="">
+                        <label for="email" class="form-label">Sign up for our latest news & articles. We won’t give you
+                            spam mails.</label>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <hr>
+                </div>
+            </div>
+
+            </div>
+            <div class="text-center p-5 footer-end">
+                © Copyright 2021 by Layerdrops.com
+            </div>
+        </footer>
+    </section>
+    <!--End Site Map-->
     <!--Start Scripts-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
@@ -513,22 +1294,9 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="assets/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
     <script src="assets/jquery-ui-1.12.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="assets/js/wow.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
     <script src="assets/patrickkunka-mixitup-61dac05/dist/mixitup.min.js"></script>
     <script src="script.js"></script>
-    <script>
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            animateOut: 'animate__fadeOut animate__zoomOut ',
-            animateIn: 'animate__fadeIn animate__zoomIn animate__slow',
-            items: 1,
-            loop: true,
-            nav: true,
-            autoplay: true,
-            autoplayTimeout: 6000,
-            autoplayHoverPause: true
-        });
-    </script>
     <script>
         new WOW().init();
     </script>
@@ -571,9 +1339,30 @@
     </script>
     <script>
         var containerEl = document.querySelector('.container-gallery');
-
         var mixer = mixitup(containerEl);
     </script>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("scrollUp");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
     <!--End Scripts-->
 </body>
 
