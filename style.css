@@ -931,6 +931,8 @@ max-height: 100px;
     }
     .clients-header{
         font-size: 2rem;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
 }
@@ -1061,8 +1063,8 @@ color:var(--text-color-dark);
     background-image: url(assets/img/image-2.jpg);
 }
 #customer1 .since-rounded{
-    position: absolute;
-    left: 50%;
+    position: relative;
+    margin: auto;
     box-shadow: none;
     animation: ripple 2s linear infinite;
     animation-delay: 0s;
@@ -1073,7 +1075,7 @@ color:var(--text-color-dark);
     left:25%
 }
 #customer1 .section-header{
-    font-size:5rem;
+    font-size:2rem;
     margin: 100px auto;
     word-break: break-word;
 }
@@ -1187,6 +1189,7 @@ color:var(--text-color-dark);
     box-shadow: 1px 10px 21px 0px rgba(34,36,41,0.26);
     -webkit-box-shadow: 1px 10px 21px 0px rgba(34,36,41,0.26);
     -moz-box-shadow: 1px 10px 21px 0px rgba(34,36,41,0.26);
+    margin:auto;
 }
 .blog-card-social .list-group{
     justify-content: space-around;
@@ -1329,19 +1332,26 @@ color:var(--text-color-dark);
 /*End Offices Section*/
 /*Start Invite*/
 .invite-wrapper{
-    background-color:var(--main-color);
+    background-color: var(--main-color);
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    padding:2.7rem;
+    padding: 2.7rem;
     display: flex;
     flex-direction: row;
-    color:var(--white);
+    color: var(--white);
     justify-content: space-between;
-    position:relative;
-    bottom:-30px;
+    position: relative;
+    bottom: -30px;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top right;
+    z-index: 1;
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgb(83 109 254)), url(assets/img/call-to-shape-1.png);
 }
 .invite-wrapper .btn{
     color:var(--white);
@@ -1358,11 +1368,17 @@ color:var(--text-color-dark);
 @media (max-width:992px) {
     .invite-wrapper{
         font-size:2rem;
+        flex-direction: column;
+    }
+    .invite-wrapper .section-header{
+        margin:auto;
+    }
+    .invite-wrapper .section-header h1{
+        font-size:1.5rem;
     }
     .invite-button .discover-more-btn{
-        padding: 0.3rem 0.5rem;
-        width:100px;
-
+        width:150px;
+        margin: auto;
     }
     .invite-button .discover-more-btn .discover-more-btn-text{
         font-size:1rem;
