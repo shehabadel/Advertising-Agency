@@ -104,59 +104,60 @@ if ($(".search-popup").length) {
 if ($(".custom-cursor__overlay").length) {
     // / cursor /
     var cursor = $(".custom-cursor__overlay .cursor"),
-      follower = $(".custom-cursor__overlay .cursor-follower");
+        follower = $(".custom-cursor__overlay .cursor-follower");
 
     var posX = 0,
-      posY = 0;
+        posY = 0;
 
     var mouseX = 0,
-      mouseY = 0;
+        mouseY = 0;
 
     TweenMax.to({}, 0.016, {
-      repeat: -1,
-      onRepeat: function () {
-        posX += (mouseX - posX) / 9;
-        posY += (mouseY - posY) / 9;
+        repeat: -1,
+        onRepeat: function () {
+            posX += (mouseX - posX) / 9;
+            posY += (mouseY - posY) / 9;
 
-        TweenMax.set(follower, {
-          css: {
-            left: posX - 22,
-            top: posY - 22
-          }
-        });
+            TweenMax.set(follower, {
+                css: {
+                    left: posX - 22,
+                    top: posY - 22
+                }
+            });
 
-        TweenMax.set(cursor, {
-          css: {
-            left: mouseX,
-            top: mouseY
-          }
-        });
-      }
+            TweenMax.set(cursor, {
+                css: {
+                    left: mouseX,
+                    top: mouseY
+                }
+            });
+        }
     });
 
     $(document).on("mousemove", function (e) {
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      mouseX = e.pageX;
-      mouseY = e.pageY - scrollTop;
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        mouseX = e.pageX;
+        mouseY = e.pageY - scrollTop;
     });
     $("button, a").on("mouseenter", function () {
-      cursor.addClass("active");
-      follower.addClass("active");
+        cursor.addClass("active");
+        follower.addClass("active");
     });
     $("button, a").on("mouseleave", function () {
-      cursor.removeClass("active");
-      follower.removeClass("active");
+        cursor.removeClass("active");
+        follower.removeClass("active");
     });
     $(".custom-cursor__overlay").on("mouseenter", function () {
-      cursor.addClass("close-cursor");
-      follower.addClass("close-cursor");
+        cursor.addClass("close-cursor");
+        follower.addClass("close-cursor");
     });
     $(".custom-cursor__overlay").on("mouseleave", function () {
-      cursor.removeClass("close-cursor");
-      follower.removeClass("close-cursor");
+        cursor.removeClass("close-cursor");
+        follower.removeClass("close-cursor");
     });
-  }
+}
 /*End Search Popup*/
+
 /*Start Navigation Bar*/
 $(document).ready(function () {
     $('.dropdown-toggle').addClass('without-after');
@@ -294,19 +295,7 @@ expUsOuter.on('mouseleave', function () {
 /* End Experience Us Section */
 
 /*Start Services Section*/
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip({ trigger: 'manual' }).tooltip('hide');
-});
 
-$(window).on('scroll', function () {
-    // if($( window ).scrollTop() > 10){   scroll down abit and get the action   
-    $(".progress-bar").each(function () {
-        each_bar_width = $(this).attr('aria-valuenow');
-        $(this).width(each_bar_width + '%');
-    });
-
-    //  }  
-});
 var portfolioItem = $('.portfolio-item');
 portfolioItem.on('mouseover', function () {
     var toast = $(this).find('.portfolio-item-toast');

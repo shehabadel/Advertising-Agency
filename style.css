@@ -67,7 +67,7 @@ h2{
     z-index: 1;
     background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgb(83 109 254)), url(assets/img/call-to-shape-1.png);
 }
-/*pre-made components*/
+/**************************************************************** PRE-MADE COMPONENTS ****************************************************************/
 .section-lines-background{
     background-image: url(assets/img/pattern-2.png);
     background-repeat: no-repeat;
@@ -146,7 +146,7 @@ h2{
     margin-left: 10px;
     background-color: var(--main-color);
 }
-/****Tip Box****/
+/**************************************************************** Tip Box ****************************************************************/
 .tip-box{
     background-color: var(--main-color);
     color: var(--text-color-dark);
@@ -185,7 +185,7 @@ font-size: 2rem;
         display: none;
     }
 }
-/****Feature Card****/
+/**************************************************************** Feature Card ****************************************************************/
 .feature-card{
     display: flex;
     flex-direction: row;
@@ -232,7 +232,7 @@ font-size: 2rem;
         text-align: center;
     }
 }
-/****RIPPLE****/
+/**************************************************************** RIPPLE ****************************************************************/
 .ripple {
     margin: auto;
     margin-top: 10rem;
@@ -286,7 +286,7 @@ font-size: 2rem;
     background-color: var(--white);
     color:var(--main-color);
 }
-/***Search Popup***/
+/****************************************************************Search Popup****************************************************************/
 button .btn .search-toggler{
     background-color: transparent
 }
@@ -461,7 +461,99 @@ button .btn .search-toggler{
     transform: rotate(45deg);
   }
   
-/*End pre-made components*/
+/**************************************************************** Progress Bar Animated ****************************************************************/
+.wrapper {
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.percentage {
+    padding: 20px 0;
+    opacity: 0;
+}
+
+.animation-bar {
+    height: 7px;
+    width: 0;
+    background: var(--main-color);
+    position: relative;
+    -webkit-transition: all 0.9s ease-out;
+    transition: all 0.9s ease-out;
+    border-radius: 4px;
+}
+
+.wrapper .show {
+    opacity: 1;
+    transform: translateY(100px);
+    animation: come-in 0.8s ease forwards;
+    -webkit-transition: all 0.9s ease-out;
+    transition: all 0.9s ease-out;
+}
+
+.come-in:nth-child(odd) {
+    animation-duration: 0.6s; /* So they look staggered */
+}
+
+@keyframes come-in {
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.p50 {
+    width: 50%;
+}
+
+.p25 {
+    width: 25%;
+}
+
+.p36 {
+    width: 36%;
+}
+
+.p68 {
+    width: 68%;
+}
+
+.p70 {
+    width: 70%;
+}
+
+.p62 {
+    width: 62%;
+}
+
+.count-box {
+    position: absolute;
+    right: 0px;
+    bottom: 14px;
+    width: 40px;
+    height: 22px;
+    background: #000;
+    color: #ffffff;
+    line-height: 22px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 1;
+    transition: all 500ms ease;
+    margin-right: -36px;
+}
+
+    .count-box:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 100%;
+        margin-top: -5px;
+        border: 5px solid transparent;
+        border-top: 5px solid #000;
+        border-left: 5px solid #000;
+    }
+
+/****************************************************************End PRE-MADE COMPONENTS****************************************************************/
 
 /*End Utilities*/
 
@@ -683,7 +775,6 @@ button .btn .search-toggler{
 
 /*Features Images Section - Second Section*/
 .featured-images-section{
-    position: relative;
     overflow: hidden;
 }
 .featured-images-section::before{
@@ -692,16 +783,24 @@ button .btn .search-toggler{
     width: 5px;
     background-color: var(--main-color);
 }
-.featured-images-container-1{
-position: absolute;
-right:30px;
-overflow: hidden;
+
+.featured-image-vl
+{
+    width: 15px;
+    height: 30%;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+}
+.featured-image-container-1{
+    position:absolute;
+    right:30px;
 }
 .featured-image-container-2{
     position: absolute;
-    top: 200px;
-    left: -50px;
-    overflow: hidden;
+    bottom:0;
 }
 .featured-images-img{
     border-radius: 10px;
@@ -758,6 +857,10 @@ overflow: hidden;
 .random-text-list li{
     font-size: 1.4rem;
 }
+#about .random-text-list i{
+font-size: 1.2rem;
+color:var(--main-color);
+}
 .since{
     border-left: 2px solid var(--main-color);
 }
@@ -772,12 +875,12 @@ overflow: hidden;
     height: 90px;
     padding-top: 10px;
     box-shadow: -26px -15px 31px -4px rgba(0,0,0,0.42);
+    text-align: center;
 }
 .since-rounded span{
     font-size:1.3rem;
-    margin-left: 25px;
-    margin-right:10px;
-    display: inline;
+
+    display: block;
     color: var(--white);
 }
 .discover-more-btn{
