@@ -634,21 +634,7 @@ button .btn .search-toggler{
     cursor: pointer;
     padding: 5px;
 }
-@media (max-width:992px)
-{
-    #navbar-search-icon{
-        display:none;
-    }
-}
-@media (max-width:767px) {
-    #navbar-search-icon{
-        transform: none;
-        -webkit-transform: none;
-        -moz-transform: none;
-        -ms-transform: none;
-        -o-transform: none;        
-}
-}
+
 #navbar-contactus{
     padding:30px;
 }
